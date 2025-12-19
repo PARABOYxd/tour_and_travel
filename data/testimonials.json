@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Priya Sharma",
+    "location": "Mumbai, Maharashtra",
+    "avatar": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+    "rating": 5,
+    "review": "Amazing experience with TravelWise! The Manali trip was perfectly organized and our guide was very knowledgeable. Highly recommended for adventure lovers.",
+    "packageName": "Manali Adventure - Snow & Mountains"
+  },
+  {
+    "id": "2",
+    "name": "Rajesh Kumar",
+    "location": "Delhi, India",
+    "avatar": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
+    "rating": 5,
+    "review": "The Golden Triangle tour exceeded our expectations. Every detail was taken care of and we got to see the best of India's heritage. Thank you TravelWise!",
+    "packageName": "Golden Triangle - Delhi Agra Jaipur"
+  },
+  {
+    "id": "3",
+    "name": "Sneha Patel",
+    "location": "Ahmedabad, Gujarat",
+    "avatar": "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
+    "rating": 5,
+    "review": "Kerala backwaters trip was absolutely magical! The houseboat experience and the hospitality were outstanding. Will definitely book again.",
+    "packageName": "Kerala Backwaters - God's Own Country"
+  },
+  {
+    "id": "4",
+    "name": "Amit Singh",
+    "location": "Bangalore, Karnataka",
+    "avatar": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg",
+    "rating": 5,
+    "review": "Goa beach paradise was the perfect getaway! Great hotels, amazing beaches, and well-planned itinerary. The sunset cruise was unforgettable.",
+    "packageName": "Goa Beach Paradise - Sun, Sand & Sea"
+  },
+  {
+    "id": "5",
+    "name": "Kavya Reddy",
+    "location": "Hyderabad, Telangana",
+    "avatar": "https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg",
+    "rating": 5,
+    "review": "The Rajasthan heritage tour was incredible! The palaces, forts, and cultural experiences were beyond our imagination. Excellent service throughout.",
+    "packageName": "Rajasthan Royal Heritage - Palaces & Forts"
+  }
+]

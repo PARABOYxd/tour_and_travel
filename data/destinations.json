@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Manali",
+    "image": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg",
+    "packageCount": 12,
+    "state": "Himachal Pradesh"
+  },
+  {
+    "id": "2",
+    "name": "Goa",
+    "image": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg",
+    "packageCount": 8,
+    "state": "Goa"
+  },
+  {
+    "id": "3",
+    "name": "Kerala",
+    "image": "https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg",
+    "packageCount": 15,
+    "state": "Kerala"
+  },
+  {
+    "id": "4",
+    "name": "Rajasthan",
+    "image": "https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg",
+    "packageCount": 18,
+    "state": "Rajasthan"
+  },
+  {
+    "id": "5",
+    "name": "Kashmir",
+    "image": "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg",
+    "packageCount": 10,
+    "state": "Jammu & Kashmir"
+  },
+  {
+    "id": "6",
+    "name": "Andaman",
+    "image": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+    "packageCount": 6,
+    "state": "Andaman & Nicobar Islands"
+  }
+]

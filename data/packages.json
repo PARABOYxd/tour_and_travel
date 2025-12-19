@@ -1,0 +1,646 @@
+[
+  {
+    "id": "1",
+    "slug": "manali-adventure-5days",
+    "title": "Manali Adventure - Snow & Mountains",
+    "description": "Experience the thrill of Himalayan adventure with snow-capped peaks, pristine valleys, and adrenaline-pumping activities in the heart of Himachal Pradesh.",
+    "price": 25000,
+    "duration": "5D/4N",
+    "category": "Adventure",
+    "destination": "Manali, Himachal Pradesh",
+    "rating": 4.8,
+    "reviewCount": 124,
+    "images": [
+      "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg",
+      "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg",
+      "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg",
+      "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg"
+    ],
+    "highlights": [
+      "Rohtang Pass visit with snow activities",
+      "Solang Valley adventure sports",
+      "River rafting in Beas River",
+      "Local sightseeing in Old Manali",
+      "Hadimba Temple and Vashisht Hot Springs"
+    ],
+    "inclusions": [
+      "4-star hotel accommodation",
+      "Daily breakfast & dinner",
+      "Private cab transfers",
+      "All sightseeing as per itinerary",
+      "Professional tour guide"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch meals",
+      "Personal expenses",
+      "Adventure activity costs",
+      "Travel insurance"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival & Local Sightseeing",
+        "description": "Arrive at Manali, check-in to hotel. Visit Hadimba Temple, Old Manali, and Mall Road for shopping.",
+        "meals": ["Dinner"],
+        "activities": ["Temple visit", "Shopping", "Local sightseeing"]
+      },
+      {
+        "day": 2,
+        "title": "Solang Valley Adventure",
+        "description": "Full day at Solang Valley with paragliding, zorbing, and ropeway activities.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Paragliding", "Zorbing", "Ropeway", "Photography"]
+      },
+      {
+        "day": 3,
+        "title": "Rohtang Pass Excursion",
+        "description": "Early morning trip to Rohtang Pass for snow activities and scenic views.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Snow activities", "Scenic photography", "Local cuisine tasting"]
+      },
+      {
+        "day": 4,
+        "title": "River Rafting & Vashisht",
+        "description": "River rafting in Beas River followed by relaxation at Vashisht Hot Springs.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["River rafting", "Hot springs", "Relaxation"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Check-out from hotel and departure to your destination.",
+        "meals": ["Breakfast"],
+        "activities": ["Check-out", "Departure"]
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "2",
+    "slug": "goa-beach-paradise-4days",
+    "title": "Goa Beach Paradise - Sun, Sand & Sea",
+    "description": "Relax on pristine beaches, enjoy water sports, and experience the vibrant nightlife of Goa in this perfect beach getaway.",
+    "price": 18000,
+    "duration": "4D/3N",
+    "category": "Beach",
+    "destination": "Goa",
+    "rating": 4.6,
+    "reviewCount": 89,
+    "images": [
+      "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg",
+      "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg",
+      "https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg"
+    ],
+    "highlights": [
+      "Baga and Calangute Beach visits",
+      "Water sports activities",
+      "Dudhsagar Waterfalls trip",
+      "Old Goa churches tour",
+      "Sunset cruise with dinner"
+    ],
+    "inclusions": [
+      "3-star beachside resort",
+      "Daily breakfast",
+      "Airport transfers",
+      "Sightseeing as per itinerary",
+      "Sunset cruise"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch and dinner",
+      "Water sports costs",
+      "Personal expenses",
+      "Alcoholic beverages"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival & Beach Time",
+        "description": "Arrive in Goa, check-in to resort. Relax at Baga Beach and enjoy water sports.",
+        "meals": ["Breakfast"],
+        "activities": ["Beach relaxation", "Water sports", "Sunset viewing"]
+      },
+      {
+        "day": 2,
+        "title": "North Goa Exploration",
+        "description": "Visit Calangute Beach, Anjuna Flea Market, and Fort Aguada.",
+        "meals": ["Breakfast"],
+        "activities": ["Beach hopping", "Shopping", "Fort visit", "Photography"]
+      },
+      {
+        "day": 3,
+        "title": "South Goa & Dudhsagar",
+        "description": "Trip to Dudhsagar Waterfalls and Old Goa churches. Evening sunset cruise.",
+        "meals": ["Breakfast"],
+        "activities": ["Waterfall visit", "Church tour", "Sunset cruise", "Dinner cruise"]
+      },
+      {
+        "day": 4,
+        "title": "Departure",
+        "description": "Last-minute shopping and departure from Goa.",
+        "meals": ["Breakfast"],
+        "activities": ["Shopping", "Check-out", "Departure"]
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "3",
+    "slug": "kerala-backwaters-6days",
+    "title": "Kerala Backwaters - God's Own Country",
+    "description": "Cruise through serene backwaters, stay in traditional houseboats, and explore the lush green landscapes of Kerala.",
+    "price": 32000,
+    "duration": "6D/5N",
+    "category": "Cultural",
+    "destination": "Kerala",
+    "rating": 4.9,
+    "reviewCount": 156,
+    "images": [
+      "https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg",
+      "https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg",
+      "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg"
+    ],
+    "highlights": [
+      "Houseboat stay in Alleppey",
+      "Munnar tea plantation visit",
+      "Thekkady wildlife sanctuary",
+      "Kathakali dance performance",
+      "Ayurvedic spa treatment"
+    ],
+    "inclusions": [
+      "Deluxe houseboat accommodation",
+      "All meals during houseboat stay",
+      "AC vehicle for transfers",
+      "All entry fees",
+      "Cultural show tickets"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Meals not mentioned",
+      "Personal expenses",
+      "Camera fees",
+      "Tips and gratuities"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Kochi",
+        "description": "Arrive in Kochi, visit Chinese Fishing Nets, Fort Kochi, and Mattancherry Palace.",
+        "meals": ["Dinner"],
+        "activities": ["Sightseeing", "Photography", "Local market visit"]
+      },
+      {
+        "day": 2,
+        "title": "Kochi to Munnar",
+        "description": "Drive to Munnar, check-in to hotel. Visit tea plantations and Mattupetty Dam.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Tea plantation tour", "Dam visit", "Nature walk"]
+      },
+      {
+        "day": 3,
+        "title": "Munnar Sightseeing",
+        "description": "Visit Eravikulam National Park, Echo Point, and Kundala Lake.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Wildlife viewing", "Boating", "Photography"]
+      },
+      {
+        "day": 4,
+        "title": "Munnar to Thekkady",
+        "description": "Drive to Thekkady, visit Periyar Wildlife Sanctuary and spice plantations.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Wildlife safari", "Spice tour", "Boat ride"]
+      },
+      {
+        "day": 5,
+        "title": "Thekkady to Alleppey",
+        "description": "Drive to Alleppey, board houseboat for backwater cruise.",
+        "meals": ["Breakfast", "Lunch", "Dinner"],
+        "activities": ["Houseboat cruise", "Village visit", "Fishing"]
+      },
+      {
+        "day": 6,
+        "title": "Departure",
+        "description": "Check-out from houseboat and departure from Kochi airport.",
+        "meals": ["Breakfast"],
+        "activities": ["Check-out", "Shopping", "Departure"]
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "4",
+    "slug": "rajasthan-royal-heritage-7days",
+    "title": "Rajasthan Royal Heritage - Palaces & Forts",
+    "description": "Explore the royal heritage of Rajasthan with magnificent palaces, historic forts, and vibrant culture.",
+    "price": 45000,
+    "duration": "7D/6N",
+    "category": "Cultural",
+    "destination": "Rajasthan",
+    "rating": 4.7,
+    "reviewCount": 203,
+    "images": [
+      "https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg",
+      "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg",
+      "https://images.pexels.com/photos/2870167/pexels-photo-2870167.jpeg",
+      "https://images.pexels.com/photos/3244518/pexels-photo-3244518.jpeg"
+    ],
+    "highlights": [
+      "Amber Fort and City Palace, Jaipur",
+      "Mehrangarh Fort, Jodhpur",
+      "City Palace and Lake Pichola, Udaipur",
+      "Camel safari in Jaisalmer",
+      "Traditional Rajasthani cultural show"
+    ],
+    "inclusions": [
+      "Heritage hotel accommodation",
+      "Daily breakfast and dinner",
+      "AC vehicle with driver",
+      "All monument entry fees",
+      "Cultural show tickets"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch meals",
+      "Personal expenses",
+      "Camera fees at monuments",
+      "Shopping expenses"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Jaipur",
+        "description": "Arrive in Jaipur, check-in to heritage hotel. Evening visit to local markets.",
+        "meals": ["Dinner"],
+        "activities": ["Market visit", "Local shopping", "Welcome dinner"]
+      },
+      {
+        "day": 2,
+        "title": "Jaipur Sightseeing",
+        "description": "Visit Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Fort visit", "Palace tour", "Photography", "Cultural show"]
+      },
+      {
+        "day": 3,
+        "title": "Jaipur to Jodhpur",
+        "description": "Drive to Jodhpur, check-in to hotel. Visit Mehrangarh Fort and Jaswant Thada.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Fort exploration", "Museum visit", "Sunset viewing"]
+      },
+      {
+        "day": 4,
+        "title": "Jodhpur to Jaisalmer",
+        "description": "Drive to Jaisalmer, check-in to hotel. Evening visit to Jaisalmer Fort.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Fort visit", "Local market", "Sunset point"]
+      },
+      {
+        "day": 5,
+        "title": "Jaisalmer Desert Safari",
+        "description": "Visit Patwon Ki Haveli, Sam Sand Dunes for camel safari and cultural program.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Haveli visit", "Camel safari", "Desert camping", "Folk dance"]
+      },
+      {
+        "day": 6,
+        "title": "Jaisalmer to Udaipur",
+        "description": "Drive to Udaipur, check-in to hotel. Evening boat ride on Lake Pichola.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Lake cruise", "City Palace visit", "Photography"]
+      },
+      {
+        "day": 7,
+        "title": "Udaipur Departure",
+        "description": "Visit Saheliyon Ki Bari, Jagdish Temple. Departure from Udaipur.",
+        "meals": ["Breakfast"],
+        "activities": ["Garden visit", "Temple visit", "Shopping", "Departure"]
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": "5",
+    "slug": "shimla-kullu-manali-6days",
+    "title": "Shimla Kullu Manali - Hill Station Delight",
+    "description": "Experience the charm of three beautiful hill stations with scenic landscapes, pleasant weather, and adventure activities.",
+    "price": 28000,
+    "duration": "6D/5N",
+    "category": "Mountain",
+    "destination": "Himachal Pradesh",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "images": [
+      "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg",
+      "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg",
+      "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg",
+      "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg"
+    ],
+    "highlights": [
+      "Mall Road shopping in Shimla",
+      "Kullu Valley sightseeing",
+      "Rohtang Pass snow activities",
+      "Solang Valley adventure sports",
+      "Local Himachali culture experience"
+    ],
+    "inclusions": [
+      "3-star hotel accommodation",
+      "Daily breakfast and dinner",
+      "Volvo bus transfers",
+      "All sightseeing as per itinerary",
+      "Local guide services"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch meals",
+      "Adventure activity costs",
+      "Personal expenses",
+      "Travel insurance"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Delhi to Shimla",
+        "description": "Overnight journey from Delhi to Shimla by Volvo bus.",
+        "meals": [],
+        "activities": ["Travel", "Rest"]
+      },
+      {
+        "day": 2,
+        "title": "Shimla Arrival & Sightseeing",
+        "description": "Arrive in Shimla, check-in to hotel. Visit Mall Road, Ridge, and Christ Church.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Mall Road walk", "Shopping", "Church visit", "Photography"]
+      },
+      {
+        "day": 3,
+        "title": "Shimla to Manali",
+        "description": "Drive to Manali via Kullu Valley. Check-in to hotel in Manali.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Scenic drive", "Valley views", "Check-in"]
+      },
+      {
+        "day": 4,
+        "title": "Manali Local Sightseeing",
+        "description": "Visit Hadimba Temple, Vashisht Hot Springs, and Old Manali.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Temple visit", "Hot springs", "Local market", "Tibetan monastery"]
+      },
+      {
+        "day": 5,
+        "title": "Rohtang Pass & Solang Valley",
+        "description": "Full day excursion to Rohtang Pass and Solang Valley for adventure activities.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Snow activities", "Paragliding", "Zorbing", "Photography"]
+      },
+      {
+        "day": 6,
+        "title": "Departure",
+        "description": "Check-out from hotel and departure to Delhi by Volvo bus.",
+        "meals": ["Breakfast"],
+        "activities": ["Check-out", "Shopping", "Departure"]
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": "6",
+    "slug": "andaman-islands-5days",
+    "title": "Andaman Islands - Tropical Paradise",
+    "description": "Discover pristine beaches, crystal clear waters, and vibrant marine life in the beautiful Andaman Islands.",
+    "price": 35000,
+    "duration": "5D/4N",
+    "category": "Beach",
+    "destination": "Andaman & Nicobar Islands",
+    "rating": 4.8,
+    "reviewCount": 92,
+    "images": [
+      "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg",
+      "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg",
+      "https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg"
+    ],
+    "highlights": [
+      "Radhanagar Beach - Asia's best beach",
+      "Scuba diving and snorkeling",
+      "Cellular Jail light and sound show",
+      "Ross Island historical tour",
+      "Elephant Beach water sports"
+    ],
+    "inclusions": [
+      "Beach resort accommodation",
+      "Daily breakfast and dinner",
+      "Inter-island ferry transfers",
+      "All entry fees and permits",
+      "Snorkeling equipment"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch meals",
+      "Scuba diving costs",
+      "Personal expenses",
+      "Water sports activities"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Port Blair",
+        "description": "Arrive in Port Blair, check-in to hotel. Visit Cellular Jail and attend light & sound show.",
+        "meals": ["Dinner"],
+        "activities": ["Jail visit", "Light & sound show", "Local market"]
+      },
+      {
+        "day": 2,
+        "title": "Ross Island & North Bay",
+        "description": "Visit Ross Island ruins and North Bay for water sports and coral viewing.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Island hopping", "Snorkeling", "Water sports", "Photography"]
+      },
+      {
+        "day": 3,
+        "title": "Havelock Island",
+        "description": "Ferry to Havelock Island, visit Radhanagar Beach for sunset.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Beach relaxation", "Swimming", "Sunset viewing", "Photography"]
+      },
+      {
+        "day": 4,
+        "title": "Elephant Beach",
+        "description": "Visit Elephant Beach for snorkeling and water sports. Return to Port Blair.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Snorkeling", "Water sports", "Beach activities", "Ferry ride"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Last-minute shopping and departure from Port Blair.",
+        "meals": ["Breakfast"],
+        "activities": ["Shopping", "Check-out", "Departure"]
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": "7",
+    "slug": "kashmir-paradise-6days",
+    "title": "Kashmir Paradise - Heaven on Earth",
+    "description": "Experience the breathtaking beauty of Kashmir with Dal Lake, Mughal gardens, and snow-capped mountains.",
+    "price": 38000,
+    "duration": "6D/5N",
+    "category": "Mountain",
+    "destination": "Kashmir",
+    "rating": 4.9,
+    "reviewCount": 145,
+    "images": [
+      "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg",
+      "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg",
+      "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg",
+      "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg"
+    ],
+    "highlights": [
+      "Houseboat stay on Dal Lake",
+      "Shikara ride at sunrise",
+      "Gulmarg Gondola cable car",
+      "Pahalgam valley sightseeing",
+      "Mughal Gardens tour"
+    ],
+    "inclusions": [
+      "Deluxe houseboat accommodation",
+      "Daily breakfast and dinner",
+      "Airport transfers",
+      "Shikara rides",
+      "All sightseeing as per itinerary"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch meals",
+      "Gondola cable car charges",
+      "Personal expenses",
+      "Pony rides"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Srinagar",
+        "description": "Arrive in Srinagar, transfer to houseboat on Dal Lake. Evening Shikara ride.",
+        "meals": ["Dinner"],
+        "activities": ["Houseboat check-in", "Shikara ride", "Lake views"]
+      },
+      {
+        "day": 2,
+        "title": "Srinagar Sightseeing",
+        "description": "Visit Mughal Gardens - Nishat, Shalimar, and Chashme Shahi. Hazratbal Shrine.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Garden tour", "Shrine visit", "Photography", "Local market"]
+      },
+      {
+        "day": 3,
+        "title": "Gulmarg Day Trip",
+        "description": "Full day excursion to Gulmarg. Gondola cable car ride and meadow walks.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Cable car ride", "Meadow walks", "Photography", "Snow activities"]
+      },
+      {
+        "day": 4,
+        "title": "Pahalgam Excursion",
+        "description": "Day trip to Pahalgam valley. Visit Betaab Valley and Aru Valley.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Valley sightseeing", "River views", "Pony rides", "Nature walks"]
+      },
+      {
+        "day": 5,
+        "title": "Sonamarg Day Trip",
+        "description": "Visit Sonamarg - Meadow of Gold. Thajiwas Glacier trek (optional).",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Glacier trek", "Meadow walks", "Photography", "Local cuisine"]
+      },
+      {
+        "day": 6,
+        "title": "Departure",
+        "description": "Last-minute shopping at Lal Chowk and departure from Srinagar.",
+        "meals": ["Breakfast"],
+        "activities": ["Shopping", "Check-out", "Departure"]
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": "8",
+    "slug": "golden-triangle-5days",
+    "title": "Golden Triangle - Delhi Agra Jaipur",
+    "description": "Explore India's most famous tourist circuit covering Delhi, Agra's Taj Mahal, and Jaipur's royal heritage.",
+    "price": 22000,
+    "duration": "5D/4N",
+    "category": "Cultural",
+    "destination": "Delhi, Agra, Jaipur",
+    "rating": 4.6,
+    "reviewCount": 234,
+    "images": [
+      "https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg",
+      "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg",
+      "https://images.pexels.com/photos/2870167/pexels-photo-2870167.jpeg",
+      "https://images.pexels.com/photos/3244518/pexels-photo-3244518.jpeg"
+    ],
+    "highlights": [
+      "Taj Mahal sunrise visit",
+      "Red Fort and India Gate, Delhi",
+      "Amber Fort elephant ride",
+      "Agra Fort and Fatehpur Sikri",
+      "City Palace and Hawa Mahal"
+    ],
+    "inclusions": [
+      "3-star hotel accommodation",
+      "Daily breakfast",
+      "AC vehicle with driver",
+      "All monument entry fees",
+      "Professional guide services"
+    ],
+    "exclusions": [
+      "Flight tickets",
+      "Lunch and dinner",
+      "Personal expenses",
+      "Camera fees",
+      "Tips and gratuities"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Delhi Sightseeing",
+        "description": "Visit Red Fort, Jama Masjid, India Gate, and Qutub Minar.",
+        "meals": ["Breakfast"],
+        "activities": ["Monument visits", "Photography", "Local market", "Cultural tour"]
+      },
+      {
+        "day": 2,
+        "title": "Delhi to Agra",
+        "description": "Drive to Agra, visit Agra Fort and Mehtab Bagh for Taj Mahal sunset view.",
+        "meals": ["Breakfast"],
+        "activities": ["Fort visit", "Sunset viewing", "Photography", "Local shopping"]
+      },
+      {
+        "day": 3,
+        "title": "Taj Mahal & Fatehpur Sikri",
+        "description": "Sunrise visit to Taj Mahal, then drive to Fatehpur Sikri. Continue to Jaipur.",
+        "meals": ["Breakfast"],
+        "activities": ["Taj Mahal visit", "Fatehpur Sikri tour", "Photography", "Travel"]
+      },
+      {
+        "day": 4,
+        "title": "Jaipur Sightseeing",
+        "description": "Visit Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar.",
+        "meals": ["Breakfast"],
+        "activities": ["Fort visit", "Palace tour", "Elephant ride", "Observatory visit"]
+      },
+      {
+        "day": 5,
+        "title": "Jaipur to Delhi",
+        "description": "Morning shopping at local markets, then drive back to Delhi for departure.",
+        "meals": ["Breakfast"],
+        "activities": ["Shopping", "Local market", "Travel", "Departure"]
+      }
+    ],
+    "featured": true
+  }
+]
