@@ -45,11 +45,11 @@ export default function SearchBar({ onSearch, className }: SearchBarProps) {
   };
 
   return (
-    <div className={`bg-white rounded-lg shadow-lg p-4 ${className}`}>
+    <div className={`bg-background border border-border rounded-lg shadow-lg p-4 ${className}`}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* Destination */}
         <div className="relative">
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-foreground mb-1">
             Destination
           </label>
           <div className="relative">
@@ -63,14 +63,14 @@ export default function SearchBar({ onSearch, className }: SearchBarProps) {
                 setShowDestinations(true);
               }}
               onFocus={() => setShowDestinations(true)}
-              className="pl-10"
+              className="pl-10 bg-background text-foreground"
             />
             {showDestinations && filteredDestinations.length > 0 && (
-              <div className="absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-md shadow-lg z-10 mt-1">
+              <div className="absolute top-full left-0 right-0 bg-popover border border-border rounded-md shadow-lg z-10 mt-1">
                 {filteredDestinations.map((dest) => (
                   <button
                     key={dest}
-                    className="w-full text-left px-3 py-2 hover:bg-gray-50 text-sm"
+                    className="w-full text-left px-3 py-2 hover:bg-accent hover:text-accent-foreground text-sm text-popover-foreground transition-colors"
                     onClick={() => {
                       setDestination(dest);
                       setShowDestinations(false);
@@ -86,14 +86,14 @@ export default function SearchBar({ onSearch, className }: SearchBarProps) {
 
         {/* Date Range */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-foreground mb-1">
             Travel Dates
           </label>
           <Popover>
             <PopoverTrigger asChild>
               <Button
                 variant="outline"
-                className="w-full justify-start text-left font-normal"
+                className="w-full justify-start text-left font-normal text-foreground"
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 {dateRange?.from ? (
@@ -126,11 +126,11 @@ export default function SearchBar({ onSearch, className }: SearchBarProps) {
 
         {/* Travelers */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-foreground mb-1">
             Travelers
           </label>
           <Select value={travelers.toString()} onValueChange={(value) => setTravelers(parseInt(value))}>
-            <SelectTrigger>
+            <SelectTrigger className="text-foreground">
               <div className="flex items-center">
                 <Users className="mr-2 h-4 w-4" />
                 <SelectValue />

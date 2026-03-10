@@ -23,7 +23,7 @@ export default function Header() {
   const { items: wishlistItems } = useWishlistStore();
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm border-b border-border sticky top-0 z-50">
       {/* Top bar */}
       <div className="bg-blue-600 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,8 +54,8 @@ export default function Header() {
               <MapPin className="h-6 w-6" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">TravelWise</h1>
-              <p className="text-xs text-gray-500">Discover Your Next Adventure</p>
+              <h1 className="text-2xl font-bold text-foreground">TravelWise</h1>
+              <p className="text-xs text-muted-foreground">Discover Your Next Adventure</p>
             </div>
           </Link>
 
@@ -66,7 +66,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  'text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors',
+                  'text-foreground/70 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors',
                   pathname === item.href && 'text-blue-600 border-b-2 border-blue-600'
                 )}
               >
@@ -129,7 +129,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-background border-t border-border">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
               <Link
@@ -138,8 +138,8 @@ export default function Header() {
                 className={cn(
                   'block px-3 py-2 text-base font-medium rounded-md transition-colors',
                   pathname === item.href
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                    ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/20'
+                    : 'text-foreground/70 hover:text-blue-600 hover:bg-accent'
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >
