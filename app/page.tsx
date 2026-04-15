@@ -17,6 +17,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { siteConfig } from '@/lib/site-config';
 
 // Import data
 import packagesData from '@/data/packages.json';
@@ -239,7 +240,7 @@ export default function HomePage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose TravelWise?
+              Why Choose {siteConfig.name}?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We're committed to providing exceptional travel experiences with unmatched service
@@ -291,7 +292,7 @@ export default function HomePage() {
               What Our Travelers Say
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Real experiences from real travelers who chose TravelWise for their adventures
+              Real experiences from real travelers who chose {siteConfig.name} for their adventures
             </p>
           </motion.div>
 

@@ -2,12 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, User, Heart, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuthStore } from '@/lib/stores/authStore';
 import { useWishlistStore } from '@/lib/stores/wishlistStore';
 import { cn } from '@/lib/utils';
+import { siteConfig } from '@/lib/site-config';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -31,11 +33,11 @@ export default function Header() {
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-1" />
-                <span>+91 9664029765</span>
+                <span>{siteConfig.contact.phone}</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-1" />
-                <span>Mumbai, India</span>
+                <span>{siteConfig.contact.address}</span>
               </div>
             </div>
             <div className="hidden md:block">
@@ -47,15 +49,21 @@ export default function Header() {
 
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="bg-blue-600 text-white p-2 rounded-lg mr-3">
-              <MapPin className="h-6 w-6" />
+            <div className="relative h-20 w-20 mr-2">
+              <Image
+                src={siteConfig.logo}
+                alt={siteConfig.name}
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">TravelWise</h1>
-              <p className="text-xs text-muted-foreground">Discover Your Next Adventure</p>
+              <h1 className="text-2xl font-bold text-foreground">{siteConfig.name}</h1>
+              <p className="text-xs text-muted-foreground">Explore • Connect • Discover</p>
             </div>
           </Link>
 

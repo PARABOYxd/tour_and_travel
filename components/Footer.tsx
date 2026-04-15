@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { siteConfig } from '@/lib/site-config';
 
 const footerLinks = {
   company: [
@@ -25,10 +27,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: 'Facebook', icon: Facebook, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'YouTube', icon: Youtube, href: '#' },
+  { name: 'Facebook', icon: Facebook, href: siteConfig.social.facebook },
+  { name: 'Twitter', icon: Twitter, href: siteConfig.social.twitter },
+  { name: 'Instagram', icon: Instagram, href: siteConfig.social.instagram },
+  { name: 'YouTube', icon: Youtube, href: siteConfig.social.youtube },
 ];
 
 export default function Footer() {
@@ -39,12 +41,17 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <div className="bg-blue-600 text-white p-2 rounded-lg mr-3">
-                <MapPin className="h-6 w-6" />
+              <div className="relative h-20 w-20 mr-2">
+                <Image
+                  src={siteConfig.logo}
+                  alt={siteConfig.name}
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div>
-                <h3 className="text-xl font-bold">TravelWise</h3>
-                <p className="text-sm text-gray-400">Discover Your Next Adventure</p>
+                <h3 className="text-xl font-bold">{siteConfig.name}</h3>
+                <p className="text-sm text-gray-400">Explore • Connect • Discover</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm">
@@ -108,24 +115,22 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-400">
-                  <p>123 Travel Street</p>
-                  <p>Connaught Place</p>
-                  <p>New Delhi - 110001</p>
+                  <p>{siteConfig.contact.address}</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-blue-400 mr-3" />
-                <span className="text-sm text-gray-400">+91 9876543210</span>
+                <span className="text-sm text-gray-400">{siteConfig.contact.phone}</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-blue-400 mr-3" />
-                <span className="text-sm text-gray-400">info@travelwise.com</span>
+                <span className="text-sm text-gray-400">{siteConfig.contact.email}</span>
               </div>
             </div>
             <div className="mt-4 p-3 bg-gray-800 rounded-lg">
               <p className="text-sm font-medium text-blue-400">Office Hours</p>
-              <p className="text-xs text-gray-400">Mon - Sat: 9:00 AM - 7:00 PM</p>
-              <p className="text-xs text-gray-400">Sunday: 10:00 AM - 5:00 PM</p>
+              <p className="text-xs text-gray-400">Mon - Sat: {siteConfig.contact.openingHours.monSat}</p>
+              <p className="text-xs text-gray-400">Sunday: {siteConfig.contact.openingHours.sun}</p>
             </div>
           </div>
         </div>
@@ -134,7 +139,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © 2024 TravelWise. All rights reserved.
+              © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">

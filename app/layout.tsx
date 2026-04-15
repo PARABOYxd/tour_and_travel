@@ -3,12 +3,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { siteConfig } from '@/lib/site-config';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TravelWise - Discover Your Next Adventure',
-  description: 'Your trusted travel partner for unforgettable journeys across India and beyond. Book amazing tour packages with best prices.',
+  title: `${siteConfig.name} - Discover Your Next Adventure`,
+  description: siteConfig.description,
   openGraph: {
     images: [
       {

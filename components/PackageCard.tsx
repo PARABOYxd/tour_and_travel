@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { useWishlistStore } from '@/lib/stores/wishlistStore';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { siteConfig } from '@/lib/site-config';
 
 interface Package {
   id: string;
@@ -99,11 +100,13 @@ export default function PackageCard({ package: pkg, className }: PackageCardProp
           </Button>
           
           {/* Price */}
-          <div className="absolute bottom-3 left-3 text-white">
-            <p className="text-sm opacity-90">From</p>
-            <p className="text-xl font-bold">₹{pkg.price.toLocaleString()}</p>
-            <p className="text-xs opacity-75">per person</p>
-          </div>
+          {siteConfig.showPrices && (
+            <div className="absolute bottom-3 left-3 text-white">
+              <p className="text-sm opacity-90">From</p>
+              <p className="text-xl font-bold">₹{pkg.price.toLocaleString()}</p>
+              <p className="text-xs opacity-75">per person</p>
+            </div>
+          )}
         </div>
       </div>
 
