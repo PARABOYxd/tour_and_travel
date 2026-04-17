@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
-import { Input } from '@/components/ui/button'; // Wait, let me check where Input is from
+import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import PackageCard from '@/components/PackageCard';
 import packagesData from '@/data/packages.json';
@@ -13,7 +13,7 @@ export default function PackagesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', ...new Set(packagesData.map(pkg => pkg.category))];
+  const categories = ['All', ...Array.from(new Set(packagesData.map(pkg => pkg.category)))];
 
   const filteredPackages = packagesData.filter(pkg => {
     const matchesSearch = pkg.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -49,11 +49,11 @@ export default function PackagesPage() {
         {/* Filters and Search */}
         <div className="flex flex-col md:flex-row gap-6 mb-12 items-center justify-between">
           <div className="relative w-full md:w-96">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
-            <input
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5 z-10" />
+            <Input
               type="text"
               placeholder="Search destinations or packages..."
-              className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+              className="pl-10 h-12 rounded-xl border-gray-200"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />

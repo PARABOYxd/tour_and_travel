@@ -6,7 +6,7 @@ export const travelerSchema = z.object({
   phone: z.string().regex(/^[0-9]{10}$/, 'Please enter a valid 10-digit phone number'),
   age: z.number().min(1, 'Age must be at least 1').max(100, 'Age must be less than 100'),
   gender: z.enum(['male', 'female', 'other'], {
-    required_error: 'Please select a gender',
+    message: 'Please select a gender',
   }),
 });
 
