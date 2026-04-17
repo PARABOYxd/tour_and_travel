@@ -13,8 +13,8 @@ const footerLinks = {
   quickLinks: [
     { name: 'All Packages', href: '/packages' },
     { name: 'Contact Us', href: '/contact' },
-    { name: 'Terms & Conditions', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
+    { name: 'Terms & Conditions', href: '/terms' },
+    { name: 'Privacy Policy', href: '/privacy' },
   ],
   destinations: [
     { name: 'Manali', href: '/packages?destination=manali' },
@@ -142,10 +142,10 @@ export default function Footer() {
               © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+              <Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
               <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
