@@ -115,7 +115,9 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <SearchBar className="max-w-4xl mx-auto" />
+            <SearchBar 
+              className="max-w-4xl mx-auto" 
+            />
           </motion.div>
         </div>
         

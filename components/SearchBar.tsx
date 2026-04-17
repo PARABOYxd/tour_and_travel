@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Search, MapPin, Calendar, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,6 +19,7 @@ const destinations = [
   'Kashmir',
   'Andaman & Nicobar Islands',
   'Delhi, Agra, Jaipur',
+  'Kedarnath, Uttarakhand',
 ];
 
 interface SearchBarProps {
@@ -30,6 +32,7 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ onSearch, className }: SearchBarProps) {
+  const router = useRouter();
   const [destination, setDestination] = useState('');
   const [dateRange, setDateRange] = useState<DateRange | undefined>();
   const [travelers, setTravelers] = useState(1);
@@ -41,6 +44,14 @@ export default function SearchBar({ onSearch, className }: SearchBarProps) {
 
   const handleSearch = () => {
     console.log('Search triggered:', { destination, dateRange, travelers });
+    
+    const params = new URLSearchParams();
+    if (destination) params.set('search', destination);
+    if (dateRange?.from) params.set('from', dateRange.from.toISOString());
+    if (dateRange?.to) params.set('to', dateRange.to.toISOString());
+    if (travelers > 1) params.set('travelers', travelers.toString());
+    
+    router.push(`/packages?${params.toString()}`);
     onSearch?.({ destination, dateRange, travelers });
   };
 

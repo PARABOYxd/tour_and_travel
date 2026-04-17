@@ -10,22 +10,29 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
-  title: `${siteConfig.name} - Discover Your Next Adventure`,
-  description: siteConfig.description,
+  title: {
+    default: `${siteConfig.name} - Premier Tour & Travel Agency in India`,
+    template: `%s | ${siteConfig.name}`
+  },
+  description: 'Book unforgettable Indian tour packages including Himachal, Kerala, Rajasthan, and more with Meet X World Tours. Best price guarantee and 24/7 support.',
+  keywords: ['tour packages', 'travel agency', 'India tourism', 'Himachal tours', 'Kerala honeymoon packages', 'Rajasthan travel', 'holiday packages', 'Meet X World Tours'],
   openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://meetxworldtours.com',
+    siteName: siteConfig.name,
     images: [
       {
-        url: 'https://bolt.new/static/og_default.png',
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+    images: ['/og-image.png'],
   },
 };
 

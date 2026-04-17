@@ -57,7 +57,7 @@ export default function AboutPage() {
             transition={{ delay: 0.1 }}
             className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto"
           >
-            Crafting unforgettable memories since 2012
+            Crafting unforgettable memories since {siteConfig.foundedYear}
           </motion.p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
               <div className="space-y-4 text-lg text-gray-600">
                 <p>
-                  Founded in 2012, <strong>{siteConfig.name}</strong> started with a simple mission: to make world-class travel accessible and enjoyable for everyone. What began as a small family project has grown into one of Indias most trusted travel partners.
+                  Founded in {siteConfig.foundedYear}, <strong>{siteConfig.name}</strong> started with a simple mission: to make world-class travel accessible and enjoyable for everyone. What began as a small family project has grown into one of India's most trusted travel partners.
                 </p>
                 <p>
                   We believe that travel is not just about visiting new places, but about the experiences that transform us. Our team of passionate travel enthusiasts works tirelessly to curate unique tour packages that blend comfort, adventure, and cultural immersion.
