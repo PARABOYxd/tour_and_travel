@@ -642,5 +642,74 @@
       }
     ],
     "featured": true
+  },
+  {
+    "id": "9",
+    "slug": "kedarnath-yatra-spiritual-journey",
+    "title": "Kedarnath Yatra - A Spiritual Journey",
+    "description": "Embark on a divine journey to Kedarnath, one of the most sacred pilgrimage sites in the Himalayas. Experience spiritual bliss amidst majestic peaks and the holy Mandakini river.",
+    "price": 15000,
+    "duration": "4D/3N",
+    "category": "Spiritual",
+    "destination": "Kedarnath, Uttarakhand",
+    "rating": 4.9,
+    "reviewCount": 342,
+    "images": [
+      "/images/kedarnath/temple_main.png",
+      "/images/kedarnath/peaks.png",
+      "/images/kedarnath/aarti_night.png"
+    ],
+    "highlights": [
+      "Kedarnath Temple Darshan",
+      "Helicopter ride or trek from Gaurikund",
+      "Evening Aarti at Kedarnath",
+      "Visit to Bhairav Nath Temple",
+      "Scenic views of Mandakini River"
+    ],
+    "inclusions": [
+      "Standard/Deluxe accommodation",
+      "Daily breakfast & dinner",
+      "Private transfers from Haridwar/Dehradun",
+      "Trek assistance",
+      "Medical first aid"
+    ],
+    "exclusions": [
+      "Helicopter tickets",
+      "Pony/Palki charges",
+      "Lunch meals",
+      "Personal expenses",
+      "Travel insurance"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Haridwar to Guptkashi",
+        "description": "Morning drive to Guptkashi via Rishikesh and Devprayag. Check-in to hotel/camps upon arrival.",
+        "meals": ["Dinner"],
+        "activities": ["Scenic drive", "Riverside view", "Spiritual stopover"]
+      },
+      {
+        "day": 2,
+        "title": "Guptkashi to Kedarnath",
+        "description": "Drive to Gaurikund and start trek to Kedarnath (16km). Attend evening Aarti at the temple.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Trekking", "Temple darshan", "Evening Aarti"]
+      },
+      {
+        "day": 3,
+        "title": "Kedarnath to Guptkashi",
+        "description": "Early morning darshan, then trek down to Gaurikund. Drive back to Guptkashi for overnight stay.",
+        "meals": ["Breakfast", "Dinner"],
+        "activities": ["Morning prayers", "Trekking down", "Relaxation"]
+      },
+      {
+        "day": 4,
+        "title": "Guptkashi to Haridwar",
+        "description": "Morning drive back to Haridwar. Drop-off at Haridwar Railway Station/Hotel.",
+        "meals": ["Breakfast"],
+        "activities": ["Scenic drive", "Departure"]
+      }
+    ],
+    "featured": true
   }
 ]

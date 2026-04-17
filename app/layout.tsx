@@ -3,11 +3,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import { siteConfig } from '@/lib/site-config';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: `${siteConfig.name} - Discover Your Next Adventure`,
   description: siteConfig.description,
   openGraph: {
@@ -38,6 +40,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppFloatingButton />
       </body>
     </html>
   );

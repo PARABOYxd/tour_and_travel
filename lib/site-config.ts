@@ -5,6 +5,7 @@ export const siteConfig = {
   description: 'Your trusted travel partner for unforgettable journeys across India and beyond. Book amazing tour packages with best prices.',
   contact: {
     phone: '+91 9137448270',
+    whatsapp: '+91 9137448270',
     email: 'meetxworldtours@gmail.com',
     address: 'Mumbai, India',
     openingHours: {

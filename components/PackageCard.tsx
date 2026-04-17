@@ -3,10 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, Star, Clock, Users, MapPin } from 'lucide-react';
+import { Star, Clock, Users, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { useWishlistStore } from '@/lib/stores/wishlistStore';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { siteConfig } from '@/lib/site-config';
@@ -33,19 +32,6 @@ interface PackageCardProps {
 
 export default function PackageCard({ package: pkg, className }: PackageCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlistStore();
-  const inWishlist = isInWishlist(pkg.id);
-
-  const handleWishlistToggle = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    if (inWishlist) {
-      removeFromWishlist(pkg.id);
-    } else {
-      addToWishlist(pkg.id);
-    }
-  };
 
   return (
     <motion.div
@@ -84,20 +70,7 @@ export default function PackageCard({ package: pkg, className }: PackageCardProp
             </Badge>
           )}
           
-          {/* Wishlist button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="absolute top-3 right-3 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white"
-            onClick={handleWishlistToggle}
-          >
-            <Heart
-              className={cn(
-                "h-4 w-4",
-                inWishlist ? "fill-red-500 text-red-500" : "text-white"
-              )}
-            />
-          </Button>
+
           
           {/* Price */}
           {siteConfig.showPrices && (

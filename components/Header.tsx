@@ -4,10 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, User, Heart, MapPin, Phone } from 'lucide-react';
+import { Menu, X, MapPin, Phone, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useAuthStore } from '@/lib/stores/authStore';
-import { useWishlistStore } from '@/lib/stores/wishlistStore';
 import { cn } from '@/lib/utils';
 import { siteConfig } from '@/lib/site-config';
 
@@ -21,8 +19,6 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { isAuthenticated, user, logout } = useAuthStore();
-  const { items: wishlistItems } = useWishlistStore();
 
   return (
     <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm border-b border-border sticky top-0 z-50">
@@ -85,38 +81,19 @@ export default function Header() {
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            {isAuthenticated ? (
-              <div className="flex items-center space-x-3">
-                <Link href="/wishlist" className="relative">
-                  <Button variant="ghost" size="sm">
-                    <Heart className="h-5 w-5" />
-                    {wishlistItems.length > 0 && (
-                      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                        {wishlistItems.length}
-                      </span>
-                    )}
-                  </Button>
-                </Link>
-                <Link href="/dashboard">
-                  <Button variant="ghost" size="sm">
-                    <User className="h-5 w-5 mr-2" />
-                    {user?.name}
-                  </Button>
-                </Link>
-                <Button variant="outline" size="sm" onClick={logout}>
-                  Logout
+            {/* WhatsApp Inquiry Button */}
+            <div className="flex items-center space-x-2">
+              <a 
+                href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center gap-2">
+                  <MessageCircle className="h-5 w-5" />
+                  <span className="hidden lg:inline">Enquire Now</span>
                 </Button>
-              </div>
-            ) : (
-              <div className="flex items-center space-x-2">
-                <Link href="/login">
-                  <Button variant="ghost" size="sm">Login</Button>
-                </Link>
-                <Link href="/register">
-                  <Button size="sm">Sign Up</Button>
-                </Link>
-              </div>
-            )}
+              </a>
+            </div>
 
             {/* Mobile menu button */}
             <Button
