@@ -13,6 +13,7 @@ export const siteConfig = {
       monSat: '9:00 AM - 7:00 PM',
       sun: '10:00 AM - 5:00 PM',
     },
+    formspreeId: 'xwvaoppq',
   },
   social: {
     instagram: 'https://www.instagram.com/meetxworldtours?igsh=czlocXY0aG9qbnll&utm_source=ig_contact_invite',

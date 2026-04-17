@@ -25,12 +25,27 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setSubmitted(true);
-    setIsSubmitting(false);
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    try {
+      // Use Formspree for silent background submission
+      // To activate: Replace 'YOUR_FORM_ID' in lib/site-config.ts with your actual Formspree ID
+      const response = await fetch(`https://formspree.io/f/${siteConfig.contact.formspreeId}`, {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        // Fallback or error handling
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
+      setIsSubmitting(false);
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    }
   };
 
   const contactInfo = [
