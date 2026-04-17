@@ -9,7 +9,7 @@ import { siteConfig } from '@/lib/site-config';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://meetxworld.in'),
   title: {
     default: `${siteConfig.name} - Premier Tour & Travel Agency in India`,
     template: `%s | ${siteConfig.name}`
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://meetxworldtours.com',
+    url: 'https://meetxworld.in',
     siteName: siteConfig.name,
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg',
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/og-image.png'],
+    images: ['https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg'],
   },
 };
 
